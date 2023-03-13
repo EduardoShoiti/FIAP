@@ -36,9 +36,9 @@
 # print('{:>10f}'.format(Num_float))
 # print(f'{Num_float:>10f}')
 #
-#print('{:*>10f}'.format(Num_float))
-#print('{:.10f}'.format(Num_float))
-#print('{:.3f}'.format(Num_float))
+# print('{:*>10f}'.format(Num_float))
+# print('{:.10f}'.format(Num_float))
+# print('{:.3f}'.format(Num_float))
 # print('{:*^10.2f}'.format(Num_float))
 
 
@@ -83,7 +83,7 @@ numero_digitado1 = int(input("Digite o primeiro número: "))
 numero_digitado2 = int(input("Digite o segundo número: "))
 numero_digitado3 = int(input("Digite o terceiro número: "))
 
-media_numeros = (numero_digitado1+numero_digitado2+numero_digitado3) / 3
+media_numeros = (numero_digitado1 + numero_digitado2 + numero_digitado3) / 3
 razao_numeros = numero_digitado1 / numero_digitado3
 print("{:*^10.3f}".format(media_numeros))
 print(f"{razao_numeros:-^10.3f}")
@@ -91,16 +91,18 @@ print(f"{razao_numeros:-^10.3f}")
 # Exercício 3. Dado um numero pelo usuário, exibir o anterior e posterior
 # (Ex: input=20, resposta=19 e 21)
 numero_base = int(input("Digite um número: "))
-print(f"Número digitado: {numero_base}, anterior: {numero_base-1}, posterior: {numero_base+1}")
+print(f"Número digitado: {numero_base}, anterior: {numero_base - 1}, posterior: {numero_base + 1}")
 
 # Exercício 4. Dados dois numeros pelo usuário, calcular a potência entre eles
 numero1 = int(input("Digite um número: "))
 numero2 = int(input("Digite outro número: "))
-print(f"A potência entre os números digitados é: {numero1**numero2}")
-
+print(f"A potência entre os números digitados é: {numero1 ** numero2}")
 
 # Exercício 5. Dado um numero pelo usuário, exibir o proximo multiplo de 5
-
+num = int(input("Digite um número: "))
+falta_para_chegar_a_mutiplo_de_5 = 5 - num % 5  # 5 - 8%5 = 5-3 =2
+prox_multiplo = num + (falta_para_chegar_a_mutiplo_de_5)  # 8 + 2
+print("O próximo múltiplo de 5 é:", prox_multiplo)
 
 '''
 Exemplos:

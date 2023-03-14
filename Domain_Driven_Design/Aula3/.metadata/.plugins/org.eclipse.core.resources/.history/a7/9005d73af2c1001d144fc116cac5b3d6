@@ -1,0 +1,10 @@
+package br.com.fiap.modelo;
+
+public class Cliente {
+	
+	private String nome;
+	private idade int;
+	private peso double;
+	
+
+}

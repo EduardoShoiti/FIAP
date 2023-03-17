@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400;700&family=Poppins:ital,wght@0,100;0,400;0,700;1,400;1,700&display=swap');
+
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins';
+}
+
+a {
+	text-decoration: none;
+}
+
+header {
+	position: sticky;
+	top: 0;
+}
+
+.nav-container {
+	background-color: #00A1FC;
+	width: 100%;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.nav-container ul {
+	width: 90%;
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	gap: 5%;
+}
+
+.nav-container a {
+	color: #ffffff;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.sec-cards {
+	background-color: #e6e6e6;
+	width: 100%;
+	height: 100%;
+	min-height: 50vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.sec-cards h2 {
+	font-size: 36px;
+}
+
+.div-cards {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.card-pessoal {
+	background: #fff;
+	width: 240px;
+	max-width: 370px;
+	margin-top: 2%;
+	padding: 25px;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+
+	border-radius: 24px;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-pessoal::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 40%;
+	width: 100%;
+	border-radius: 24px 24px 0 0;
+	background-color: #4070f4;
+}
+
+.dani::before {
+	background-color: #09ac68;
+}
+
+.edu::before {
+	/* background-color: #0a66c2; */
+	background-color: #092541;
+}
+
+.marcos::before {
+	background-color: #da8c19;
+}
+
+.marcela::before {
+	background-color: #dac71d;
+}
+
+.nat::before {
+	background-color: #c91010;
+}
+
+.image {
+	position: relative;
+	height: 150px;
+	width: 150px;
+	border-radius: 50%;
+	background-color: #4070f4;
+	margin-bottom: 10px;
+}
+
+.image .imagem-pessoal {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	border-radius: 50%;
+	border: 3px solid #fff;
+}
+
+.card-pessoal .texto-infos {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: #333;
+}
+
+.texto-infos .nome {
+	font-size: 22px;
+	font-weight: 500;
+}
+
+.texto-infos .RM {
+	font-size: 15px;
+	font-weight: 400;
+}

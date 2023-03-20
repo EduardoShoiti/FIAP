@@ -41,8 +41,33 @@ header {
 	font-weight: bold;
 }
 
+
+.sec-tit-projeto {
+	background: rgb(227, 226, 226);	
+	background: linear-gradient(180deg, rgba(0, 161, 252, 1) 0%, rgba(95, 192, 246, 1) 50%, rgba(158, 216, 247, 1) 100%);
+	/* background: linear-gradient(180deg, rgba(0, 161, 252, 1) 0%, rgba(95, 192, 246, 1) 65%, rgb(255 255 255) 100%); */
+	height: 60vh;
+}
+
+.sec-tit-projeto .fundo-titulo {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: row;
+}
+
+.sec-tit-projeto .fundo-titulo h1 {
+	font-size: 72px;
+	font-style: italic;
+	font-weight: bold;
+	color: #ffffff;
+}
+
+
 .sec-cards {
-	background-color: #e6e6e6;
+	background-color: #f8f8f8;
 	width: 100%;
 	height: 100%;
 	min-height: 50vh;
@@ -92,24 +117,24 @@ header {
 }
 
 .dani::before {
-	background-color: #09ac68;
+	background-color: #8fd798;
 }
 
 .edu::before {
 	/* background-color: #0a66c2; */
-	background-color: #092541;
+	background-color: #191970;
 }
 
 .marcos::before {
-	background-color: #da8c19;
+	background-color: #fcb774;
 }
 
 .marcela::before {
-	background-color: #dac71d;
+	background-color: #ffe879;
 }
 
 .nat::before {
-	background-color: #c91010;
+	background-color: #cb3e39;
 }
 
 .image {
@@ -117,7 +142,7 @@ header {
 	height: 150px;
 	width: 150px;
 	border-radius: 50%;
-	background-color: #4070f4;
+	background-color: #ffffff;
 	margin-bottom: 10px;
 }
 
@@ -144,4 +169,45 @@ header {
 .texto-infos .RM {
 	font-size: 15px;
 	font-weight: 400;
+}
+
+footer {
+	background-color: #0075b7;
+}
+
+footer .div-footer {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.div-footer div {
+	width: calc(100% / 3);
+}
+
+.div-footer .menu-footer ul {
+	list-style: none;
+}
+
+.div-footer .menu-footer a {
+	color: #cecece;
+	font-size: 14px;
+	transition: 0.5s;
+}
+
+.div-footer .menu-footer a:hover {
+	color: #ffffff;
+	padding-left: 5px;
+	transition: 0.5s;
+}
+
+.div-footer .titulo-footer {
+	display: flex;
+	justify-content: center;
+	color: #ffffff;
+	font-size: 20px;
+}
+
+.titulo-footer a {
+	color: #ffffff;
 }

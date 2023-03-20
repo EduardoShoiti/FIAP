@@ -41,62 +41,64 @@ header {
 	font-weight: bold;
 }
 
-.sec-tit-projeto {
+.sec-form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	background: rgb(227, 226, 226);
-	background: linear-gradient(180deg, rgba(0, 161, 252, 1) 0%, rgba(95, 192, 246, 1) 50%, rgba(158, 216, 247, 1) 100%);
-	/* background: linear-gradient(180deg, rgba(0, 161, 252, 1) 0%, rgba(95, 192, 246, 1) 65%, rgb(255 255 255) 100%); */
-	height: 60vh;
+	background: linear-gradient(180deg, rgba(158, 216, 247, 1)  0%, rgba(95, 192, 246, 1) 50%, rgba(0, 161, 252, 1) 100%);
+	padding-bottom: 5%;
 }
 
-.sec-tit-projeto .fundo-titulo {
+.sec-form .div-form {
+	width: 25%;
+	height: 80vh;
+	padding: 1%;
+	border: 1px solid #c7c4c4;
+	border-radius: 20px;
+	box-shadow: -2px 4px 8px #4e4e4e;
+	background-color: #fdfdfd;
+}
+
+.div-form form {
 	width: 100%;
-	height: 100%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: row;
 }
 
-.sec-tit-projeto .fundo-titulo h1 {
-	font-size: 72px;
-	font-style: italic;
-	font-weight: bold;
+.div-form input {
+	width: 70%;
+	padding: 2px;
+	margin: 2%;
+	border: 0;
+	border-bottom: 1px solid #c7c4c4;
+}
+
+form .elementos-form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+form .inpt-alteracoes {
+	width: 70%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	font-size: 12px;
+}
+
+form input[type="radio"] {
+	width: auto;	
+}
+
+form .btn-enviar {
+	width: 40%;
+	height: 30px;
+	background-color: #000000;
 	color: #ffffff;
+	border-radius: 7px;
 }
 
-.sec-problema {
-	background-color: rgb(255, 255, 255);
-	text-align: center;
-}
-
-.sec-problema h2 {
-	margin: 2% 0;
-	font-size: 28px;
-}
-
-.sec-problema .div-problema {
-	display: flex;
-	justify-content: center;
-	flex-direction: row;
-	flex-wrap: wrap;
-	text-align: justify;
-}
-
-.div-problema div {
-	width: 45%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-
-.div-problema p {
-	width: 60%;
-}
-
-.div-problema .div-imgs-texto .imgs-textos {
-	width: 150px;
-	height: 150px;
-}
 
 footer {
 	background-color: #0075b7;

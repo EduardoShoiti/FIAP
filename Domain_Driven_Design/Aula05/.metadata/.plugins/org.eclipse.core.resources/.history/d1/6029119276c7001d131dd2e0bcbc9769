@@ -1,0 +1,54 @@
+package br.com.fiap.main;
+
+import javax.swing.JOptionPane;
+
+import br.com.fiap.beans.Cliente;
+import br.com.fiap.beans.Endereco;
+import br.com.fiap.beans.Telefone;
+
+public class TesteCliente {
+
+	public static void main(String[] args) {
+		
+		Cliente objCliente = new Cliente();
+		Endereco objEndereco = new Endereco();
+		Telefone objTelefone = new Telefone();
+		
+//		objCliente.setNome("Eduardo");
+		objCliente.setNome(JOptionPane.showInputDialog("Digite o seu nome: "));
+		objCliente.setIdade(Integer.parseInt(JOptionPane.showInputDialog("Digite a idade: ")));
+		objCliente.setPeso(55.4);
+		objCliente.setEndereco(objEndereco);
+		objCliente.setTelefone(objTelefone);
+		
+//		Endereco
+		objEndereco.setLogradouro("Rua teste");
+		objEndereco.setNumero(1000);
+		objEndereco.setCep("03426-000");
+		objEndereco.setBairro("Mooca");
+		objEndereco.setMunicipio("São Paulo");
+		objEndereco.setEstado("SP");
+		
+//		Telefone
+		objTelefone.setFoneFixo("(11) 1324-3214");
+		objTelefone.setFoneCelular("(11) 9874-1564");
+		objTelefone.setFoneComercial("(11) 6545-8951");
+		objTelefone.setFoneContato("(11) 6545-3976");
+		
+		System.out.println("Nome: "+ objCliente.getNome() +
+				"\nIdade "+ objCliente.getIdade() +
+				"\nPeso "+ objCliente.getPeso() +
+				"\nLogradouro "+ objCliente.getEndereco().getLogradouro() +
+				"\nNumero "+ objCliente.getEndereco().getNumero() +
+				"\nCEP "+ objCliente.getEndereco().getCep() +
+				"\nBairro "+ objCliente.getEndereco().getBairro() +
+				"\nMunicipio "+ objCliente.getEndereco().getMunicipio() +
+				"\nEstado "+ objCliente.getEndereco().getEstado() +
+				"\nFone Fixo "+ objCliente.getTelefone().getFoneFixo() +
+				"\nFone Celular "+ objCliente.getTelefone().getFoneCelular() +
+				"\nFone Comercial "+ objCliente.getTelefone().getFoneComercial() +
+				"\nFone Contato "+ objCliente.getTelefone().getFoneContato());
+
+	}
+
+}

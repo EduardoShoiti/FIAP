@@ -1,0 +1,116 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+html,
+body {
+	height: 100%;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+	background-image: url('../imgs/fundo.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: auto 100%;
+	background-attachment: fixed;
+	display: flex;
+	flex-direction: column;
+	align-items: center;	
+}
+
+h1 {
+	font-size: 30px;
+	color: #F44C2D;
+	margin: 30px 0;
+}
+
+h2 {
+	font-size: 24px;
+	font-family: Tahoma, Geneva, Verdana, sans-serif;
+	color: #003399;
+}
+
+p {	
+	font-size: 18px;
+	color: #003399;
+	margin: 30px 0px;
+}
+
+.sec-sobre {
+	margin-top: 10%;
+}
+
+hr {
+	background-color: #000000;
+	height: 2px;
+}
+
+.div-img-top {
+	position: relative;
+	z-index: 10;
+}
+
+.container {
+	background-color: #ffffff5e;
+	width: 900px;
+	border: 4px solid #000000;
+	border-radius: 10px;
+	margin: 2%;
+	padding: 2%;
+	position: relative;
+	bottom: 130px;
+}
+
+.div-sobre {
+	display: flex;
+	align-items: center;
+}
+
+.div-sobre p {
+	text-indent: 5%;
+}
+
+.personagem {
+	display: flex;
+	gap: 3%;
+	align-items: center;
+	flex-direction: row;
+	margin: 5% 0;
+}
+
+.personagem img {
+	border-radius: 50%;
+	border: 4px solid #000066;
+}
+
+.div-img-arvore {
+	width: 100%;
+	text-align: center;
+	margin: 5% 0;
+}
+
+.sec-temporadas {
+	padding-left: 2%;
+}
+
+.sec-temporadas ul {
+	list-style: none;
+}
+
+.sec-temporadas ul li {
+	margin: 6px 0;
+}
+
+.sec-temporadas ul a {
+	color: #003399;
+	font-weight: bold;
+	transition: 0.6s;
+}
+
+.sec-temporadas ul a:hover {
+	color: #001399;
+	padding-left: 5px;
+	transition: 0.6s;
+}

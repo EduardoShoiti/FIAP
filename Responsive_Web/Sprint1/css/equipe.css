@@ -123,11 +123,11 @@ header {
 
 .edu::before {
 	/* background-color: #0a66c2; */
-	background-color: #191970;
+	background-color: #2e4f72;
 }
 
 .marcos::before {
-	background-color: #fcb774;
+	background-color: #01004e;
 }
 
 .marcela::before {
@@ -135,7 +135,7 @@ header {
 }
 
 .nat::before {
-	background-color: #cb3e39;
+	background-color: #fd9fc3;
 }
 
 .image {

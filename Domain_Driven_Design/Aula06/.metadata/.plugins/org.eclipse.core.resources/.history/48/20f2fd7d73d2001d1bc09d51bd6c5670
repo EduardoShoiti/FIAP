@@ -1,0 +1,15 @@
+package br.com.fiap.main;
+
+import br.com.fiap.beans.Cliente;
+import br.com.fiap.beans.Produto;
+
+public class Teste {
+
+	public static void main(String[] args) {
+		
+		Cliente objCliente = new Cliente();
+		Produto objProduto = new Produto();
+		
+	}
+
+}

@@ -1,0 +1,42 @@
+package br.com.fiap.main;
+
+import javax.swing.JOptionPane;
+
+import br.com.fiap.beans.Cliente;
+import br.com.fiap.beans.Produto;
+
+public class Teste {
+
+	public static void main(String[] args) {
+
+//		Cliente objCliente = new Cliente();
+//		Produto objProduto = new Produto();
+		
+		Cliente objCliente = new Cliente(JOptionPane.showInputDialog("Digite o nome"),
+				Integer.parseInt(JOptionPane.showInputDialog("Digite a idade")),
+				Double.parseDouble(JOptionPane.showInputDialog("Digite o peso"))
+				);
+
+		objCliente.setNome(JOptionPane.showInputDialog("Digite o nome"));
+		objCliente.setIdade(Integer.parseInt(JOptionPane.showInputDialog("Digite a sua idade")));
+		objCliente.setPeso(Double.parseDouble(JOptionPane.showInputDialog("Digite o peso")));
+		objCliente.setProduto(objProduto);
+
+		objProduto.setTipo(JOptionPane.showInputDialog("Digite o tipo do produto"));
+		objProduto.setMarca(JOptionPane.showInputDialog("Digite a marca"));
+		objProduto.setQuantidade(Integer.parseInt(JOptionPane.showInputDialog("Digite a quantidade")));
+		objProduto.setValor(Double.parseDouble(JOptionPane.showInputDialog("Digite o valor")));
+
+		System.out.println("Nome: " + objCliente.getNome() +
+						"\nIdade: "+ objCliente.getIdade() +
+						"\nPeso: "+ objCliente.getPeso() +
+						"\nTipo: "+ objCliente.getProduto().getTipo() +
+						"\nMarca: "+ objCliente.getProduto().getMarca() +
+						"\nQuantidade: "+ objCliente.getProduto().getQuantidade() +
+						"\nValor: "+ objCliente.getProduto().getValor()
+				);
+
+
+	}
+
+}

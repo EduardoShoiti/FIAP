@@ -1,0 +1,21 @@
+package br.com.fiap.main;
+
+import javax.swing.JOptionPane;
+
+import br.com.fiap.beans.Cliente;
+import br.com.fiap.beans.Produto;
+
+public class Teste {
+
+	public static void main(String[] args) {
+		
+		Cliente objCliente = new Cliente();
+		Produto objProduto = new Produto();
+		
+		objCliente.setNome(JOptionPane.showInputDialog("Digite o nome"));
+		
+		System.out.println(objCliente.getNome());
+		
+	}
+
+}

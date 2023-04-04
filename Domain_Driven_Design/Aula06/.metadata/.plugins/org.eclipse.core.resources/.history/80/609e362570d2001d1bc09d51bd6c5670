@@ -1,0 +1,10 @@
+package br.com.fiap.beans;
+
+public class Cliente {
+	
+	private String nome;
+	private int idade;
+	private double peso;
+	private Produto produto;
+
+}
